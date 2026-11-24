@@ -1,0 +1,65 @@
+import { useEffect } from "react";
+
+function Introduction() {
+    useEffect(() => {
+        document.title = "Zackery Martinez's Zany Mongoose | ITIS3135 | Introduction";
+    }, []);
+
+    return (
+        <main>
+            <h2>Introduction</h2>
+
+            <h6>Zackery "Zack" Martinez | Zany Mongoose</h6>
+
+            <figure>
+                <img
+                    src={`${import.meta.env.BASE_URL}images/zack-introduction.jpg`}
+                    alt="Zackery Martinez"
+                />
+                <figcaption><em>Chopped Liver</em></figcaption>
+            </figure>
+
+        <p>
+            My name is Zack, and this is my third semester at UNC Charlotte.
+            I am a Computer Science major with a concentration in Cybersecurity.
+            It's exciting to learn more about IT in general and I want to improve
+            my skills for my career, and I look forward to learning about front-end
+            development.
+        </p>
+
+        <ul>
+            <li><strong>Personal Background:</strong> Born in Riverside California, moved to N.C. in 2015.</li>
+            <li><strong>Professional Background:</strong> I did some mechanic work and buried cable for Spectrum.</li>
+            <li><strong>Academic Background:</strong> Associate in Science 2025. Computer Science 2027.</li>
+            <li><strong>Primary Work Computer:</strong> HP Pavilion Laptop, Windows 11 24H2.</li>
+            <li><strong>Primary Work Location:</strong> My home.</li>
+            <li><strong>Alternate Computer & Location:</strong> My PC desktop, library.</li>
+
+            <li>
+                <strong>Courses I'm Taking, & Why:</strong>
+                <ol>
+                    <li><strong>ITSC 3155 - Software Engineering:</strong> Requirement and I want to know the process of making software from a conceptual point of view.</li>
+                    <li><strong>ITIS 3135 - Front-End Web App Development:</strong> Requirement and it will be a new set of skills that I can learn.</li>
+                    <li><strong>ITSC 3146 - Intro Systems & Networking:</strong> Requirement, but it has many connections to cybersecurity so this class to me is a priority to learn and master what I learn.</li>
+                    <li><strong>ITSC 3160 - Database Design & Implementation:</strong> An important class I want to learn because databases are important and I want to know how they are made and used.</li>
+                    <li><strong>ITIS 3200 - Intro to Info Security & Privacy:</strong> First class of my concentration so I am excited to learn about cybersecurity and everything it has to offer.</li>
+                </ol>  
+            </li>
+        </ul>
+
+            <blockquote>
+                <p>
+                    "Don't, however, worry about your individual potential.
+                    Potential is only the expression of a possibility, something that
+                    can be assessed accurately only in retrospect.
+                    In other words, you'll never know how good you might have become
+                    unless you try."
+                </p>
+
+                <cite>~ Mike Mentzer</cite>
+            </blockquote>            
+        </main>
+    );
+}
+
+export default Introduction;

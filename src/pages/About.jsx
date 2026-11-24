@@ -1,0 +1,64 @@
+import { useEffect } from "react";
+
+function About() {
+    useEffect(() => {
+        document.title = "Zackery Martinez's Zany Mongoose | ITIS3135 | About";
+    }, []);
+
+    return (
+        <main>
+            <h2>About</h2>
+
+            <p>
+                This website was created in part to demonstrate my work for
+                ITIS3135 - Front-End Web Application Development at UNC Charlotte.
+                The course provides experience with front-end web development through
+                the creation of multiple websites using different tools, techniques,
+                and development practices.
+            </p>
+
+            <p>
+                Throughout the course, students gain experience creating and
+                maintaining websites while learning how to organize, validate, publish
+                and improve web content. Additional information about the course can
+                be found on the{" "}
+                <a href="https://divonbriesen.github.io/teaching/itis3135/">
+                    ITIS3135 course website
+                </a>.
+            </p>
+
+            <h3>Tools Used in the Course</h3>
+
+            <ul>
+                <li>Vs Code</li>
+                <li>Emmet within Vs Code</li>
+                <li>SFTP via FileZilla</li>
+                <li>Git via GitHub Desktop and GitHub.com</li>
+                <li>Various browser development tools</li>
+                <li>The Accumulus Validator</li>
+            </ul>
+
+            <h3>Websites and Projects</h3>
+
+            <p>
+                During the course, students create several different websites and
+                projects that demonstrate different areas of web development.
+                These include:
+            </p>
+
+            <ul>
+                <li>A personal home portfolio</li>
+                <li>This ITIS3135 course site</li>
+                <li>
+                    A deliberately poorly designed page used to demonstrate web
+                    design practices that should be avoided
+                </li>
+                <li>A whimsical product company</li>
+                <li>A student, colleague, or peer management tool</li>
+                <li>A client project website</li>
+            </ul>
+        </main>        
+    );
+}
+
+export default About;
